@@ -44,7 +44,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         // Setup audio session
         let session = AVAudioSession.sharedInstance()
         do {
-            try session.setCategory(.playAndRecord)
+            if #available(iOS 10.0, *) {
+                try session.setCategory(.playAndRecord, mode: .default, options: [])
+            } else {
+                // Fallback on earlier versions
+            }
         } catch _ {
         }
 
