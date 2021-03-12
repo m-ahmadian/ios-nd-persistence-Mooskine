@@ -17,11 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    func hasLaunchedBefore() {
+        if UserDefaults.standard.bool(forKey: "HasLaunchedBefore") {
+            print("App has launched before!")
+        }
+        else {
+            print("This is the first launch ever!")
+            UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
+            UserDefaults.standard.set(0.0, forKey: "Slider Value Key")
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
     // MARK: UIApplicationDelegate
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Usually this is not overridden. Using the "did finish launching" method is more typical
         print("App Delegate: will finish launching")
+        
+        hasLaunchedBefore()
         
         return true
     }
