@@ -22,6 +22,7 @@
 		A76557E81F8BC1FB00EFF9B8 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76557E61F8BC1AC00EFF9B8 /* OpenSans-Regular.ttf */; };
 		A76557E91F8BC1FB00EFF9B8 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76557E41F8BC1AC00EFF9B8 /* OpenSans-Semibold.ttf */; };
 		E832FCD526038EA5006514A9 /* Notebook+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E832FCD426038EA5006514A9 /* Notebook+Extensions.swift */; };
+		E832FCD726038FF0006514A9 /* Note+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E832FCD626038FF0006514A9 /* Note+Extensions.swift */; };
 		E84A907725FFAAAE00CA79D4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84A907625FFAAAE00CA79D4 /* DataController.swift */; };
 		E8742D3625FDCC8D0084BE5E /* Mooskine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8742D3425FDCC8D0084BE5E /* Mooskine.xcdatamodeld */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		A76557E51F8BC1AC00EFF9B8 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		A76557E61F8BC1AC00EFF9B8 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		E832FCD426038EA5006514A9 /* Notebook+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notebook+Extensions.swift"; sourceTree = "<group>"; };
+		E832FCD626038FF0006514A9 /* Note+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extensions.swift"; sourceTree = "<group>"; };
 		E84A907625FFAAAE00CA79D4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E8742D3525FDCC8D0084BE5E /* Mooskine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mooskine.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				E832FCD426038EA5006514A9 /* Notebook+Extensions.swift */,
+				E832FCD626038FF0006514A9 /* Note+Extensions.swift */,
 			);
 			path = "Managed Object Extensions";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				03B2699B1F2F8AA100C7433C /* NotebooksListViewController.swift in Sources */,
 				E84A907725FFAAAE00CA79D4 /* DataController.swift in Sources */,
 				03B2699C1F2F8AA100C7433C /* NoteDetailsViewController.swift in Sources */,
+				E832FCD726038FF0006514A9 /* Note+Extensions.swift in Sources */,
 				03B269A01F2F8AAD00C7433C /* Cell.swift in Sources */,
 				03B2699D1F2F8AA100C7433C /* NotesListViewController.swift in Sources */,
 				E832FCD526038EA5006514A9 /* Notebook+Extensions.swift in Sources */,
