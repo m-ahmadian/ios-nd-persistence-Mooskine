@@ -45,7 +45,7 @@ class ListDataSource<ObjectType: NSManagedObject, CellType: UITableViewCell>: NS
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return fetchedResultsController.sections?.count ?? 0
+        return fetchedResultsController.sections?.count ?? 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
