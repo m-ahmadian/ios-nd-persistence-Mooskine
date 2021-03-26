@@ -61,6 +61,7 @@
 		E832FCD626038FF0006514A9 /* Note+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Extensions.swift"; sourceTree = "<group>"; };
 		E84A907625FFAAAE00CA79D4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E8742D3525FDCC8D0084BE5E /* Mooskine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mooskine.xcdatamodel; sourceTree = "<group>"; };
+		E8A05B2A260E2DFE009D0100 /* Mooskine-2020-03-26-attributedString.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Mooskine-2020-03-26-attributedString.xcdatamodel"; sourceTree = "<group>"; };
 		E8EF90992608326A004DB4E3 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -575,9 +576,10 @@
 		E8742D3425FDCC8D0084BE5E /* Mooskine.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				E8A05B2A260E2DFE009D0100 /* Mooskine-2020-03-26-attributedString.xcdatamodel */,
 				E8742D3525FDCC8D0084BE5E /* Mooskine.xcdatamodel */,
 			);
-			currentVersion = E8742D3525FDCC8D0084BE5E /* Mooskine.xcdatamodel */;
+			currentVersion = E8A05B2A260E2DFE009D0100 /* Mooskine-2020-03-26-attributedString.xcdatamodel */;
 			path = Mooskine.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -36,7 +36,7 @@ class NotesListViewController: UIViewController {
         
         listDataSource = ListDataSource(tableView: tableView, managedObjectContext: dataController.viewContext, fetchRequest: fetchRequest, configure: { (cell, note) in
             
-            cell.textPreviewLabel.text = note.text
+            cell.textPreviewLabel.attributedText = note.attributedText
             if let creationDate = note.creationDate {
                 cell.dateLabel.text = self.dateFormatter.string(from: creationDate)
             }
