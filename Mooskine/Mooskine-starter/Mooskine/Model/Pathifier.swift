@@ -6,7 +6,6 @@
 //  Copyright © 2021 Udacity. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import CoreText
 
