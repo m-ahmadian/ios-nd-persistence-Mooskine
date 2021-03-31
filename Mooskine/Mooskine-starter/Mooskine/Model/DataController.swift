@@ -15,11 +15,22 @@ import CoreData
         return persistentContainer.viewContext
     }
     
-    
     let persistentContainer: NSPersistentContainer
+    
+    var backgroundContext: NSManagedObjectContext!
     
     init(modelName: String) {
         persistentContainer = NSPersistentContainer(name: modelName)
+    }
+    
+    func configureContexts() {
+        backgroundContext = persistentContainer.newBackgroundContext()
+        
+        viewContext.automaticallyMergesChangesFromParent = true
+        backgroundContext.automaticallyMergesChangesFromParent = true
+        
+        backgroundContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+        viewContext.mergePolicy = NSMergePolicy.mergeByPropertyStoreTrump
     }
     
     func load(completion: (() -> Void)? = nil) {
@@ -28,6 +39,7 @@ import CoreData
                 fatalError(error?.localizedDescription ?? "")
             }
             self.autoSaveViewContext()
+            self.configureContexts()
             completion?()
         }
     }
