@@ -97,9 +97,6 @@ class NotebooksListViewController: UIViewController {
     }
 
     func updateEditButtonState() {
-//        if let sections = fetchedResultsController.sections {
-//            navigationItem.rightBarButtonItem?.isEnabled = sections[0].numberOfObjects > 0
-//        }
         if let sections = listDataSource.fetchedResultsController.sections {
             navigationItem.rightBarButtonItem?.isEnabled = sections[0].numberOfObjects > 0
         }
